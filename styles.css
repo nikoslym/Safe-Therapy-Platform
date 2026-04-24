@@ -212,18 +212,35 @@ em { font-style: italic; }
   cursor: not-allowed;
 }
 
-/* Visual suggestion notes ------------------------------------- */
-/* Shown to investor as placeholder guidance for future imagery. */
+/* Visual suggestion notes — hidden now that real images are in place */
+.visual-note { display: none; }
 
-.visual-note {
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  color: var(--ink-mute);
-  font-style: italic;
-  border-left: 2px solid var(--line);
-  padding: 5px 14px;
-  margin: 0 0 28px;
-  background: transparent;
+/* Section background visuals ---------------------------------- */
+/* Each uses a strong linen overlay so text stays fully readable.
+   The image shows through only as a soft textural presence.     */
+
+#introduction {
+  background-image:
+    linear-gradient(rgba(246, 241, 232, 0.91), rgba(246, 241, 232, 0.91)),
+    url('assets/visual-introduction.jpg');
+  background-size: cover;
+  background-position: center 30%;
+}
+
+#thesis {
+  background-image:
+    linear-gradient(rgba(246, 241, 232, 0.90), rgba(246, 241, 232, 0.90)),
+    url('assets/visual-thesis.jpg');
+  background-size: cover;
+  background-position: right center;
+}
+
+#investment {
+  background-image:
+    linear-gradient(rgba(239, 231, 218, 0.90), rgba(239, 231, 218, 0.90)),
+    url('assets/visual-investment.jpg');
+  background-size: cover;
+  background-position: center 40%;
 }
 
 /* Structured list (What This Platform Is Not + Platform Snapshot) */
