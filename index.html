@@ -16,6 +16,94 @@
 </head>
 <body>
 
+  <!-- ============================================================
+       Reusable Lucide-style icon set (one consistent icon system).
+       Rendered via <use href="#icon-name"> below to stay lightweight.
+  ============================================================ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <!-- shield -->
+      <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      </symbol>
+      <!-- badge-check -->
+      <symbol id="i-badge-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/>
+        <path d="m9 12 2 2 4-4"/>
+      </symbol>
+      <!-- heart -->
+      <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+      </symbol>
+      <!-- feather -->
+      <symbol id="i-feather" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/>
+        <line x1="16" y1="8" x2="2" y2="22"/>
+        <line x1="17.5" y1="15" x2="9" y2="15"/>
+      </symbol>
+      <!-- aperture -->
+      <symbol id="i-aperture" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="14.31" y1="8" x2="20.05" y2="17.94"/>
+        <line x1="9.69" y1="8" x2="21.17" y2="8"/>
+        <line x1="7.38" y1="12" x2="13.12" y2="2.06"/>
+        <line x1="9.69" y1="16" x2="3.95" y2="6.06"/>
+        <line x1="14.31" y1="16" x2="2.83" y2="16"/>
+        <line x1="16.62" y1="12" x2="10.88" y2="21.94"/>
+      </symbol>
+      <!-- compass -->
+      <symbol id="i-compass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+      </symbol>
+      <!-- users -->
+      <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+        <circle cx="9" cy="7" r="4"/>
+        <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+      </symbol>
+      <!-- calendar -->
+      <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+        <line x1="16" y1="2" x2="16" y2="6"/>
+        <line x1="8" y1="2" x2="8" y2="6"/>
+        <line x1="3" y1="10" x2="21" y2="10"/>
+      </symbol>
+      <!-- sprout -->
+      <symbol id="i-sprout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7 20h10"/>
+        <path d="M10 20c5.5-2.5.8-6.4 3-10"/>
+        <path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/>
+        <path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/>
+      </symbol>
+      <!-- message-circle -->
+      <symbol id="i-message-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      </symbol>
+      <!-- book-open -->
+      <symbol id="i-book-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+      </symbol>
+      <!-- mail -->
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="4" width="20" height="16" rx="2"/>
+        <path d="m22 7-10 6L2 7"/>
+      </symbol>
+      <!-- shield-check -->
+      <symbol id="i-shield-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        <path d="m9 12 2 2 4-4"/>
+      </symbol>
+      <!-- leaf -->
+      <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19.2 2.96c1 5.64-.39 10.11-4.53 12.75-3.36 2.23-7.82 2.7-10.67.29"/>
+        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+      </symbol>
+    </defs>
+  </svg>
+
   <header class="page-header">
     <div class="wrap header-inner">
       <div class="brand">
@@ -32,25 +120,44 @@
 
   <main>
 
-    <!-- HERO -->
+    <!-- HERO =====================================================
+         Enhanced with subtle staggered entrance animation (CSS only)
+         and a soft trust indicators row below the lede.
+    ============================================================ -->
     <section class="hero">
       <div class="wrap hero-inner">
-        <p class="eyebrow">Working Title</p>
-        <h1 class="display">
+        <p class="eyebrow hero-reveal d-1">Working Title</p>
+        <h1 class="display hero-reveal d-2">
           A safe digital space<br />
           <em>for women.</em>
         </h1>
-        <p class="lede">
+        <p class="lede hero-reveal d-3">
           A clinically authored, women-centered therapy platform — built to make
           the first steps into therapy feel calmer, clearer, and more human.
         </p>
-        <div class="hero-meta">
+
+        <ul class="hero-trust hero-reveal d-4" aria-label="Platform values">
+          <li class="hero-trust-item">
+            <svg class="icon" aria-hidden="true"><use href="#i-badge-check"/></svg>
+            Therapist-verified
+          </li>
+          <li class="hero-trust-item">
+            <svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>
+            Private &amp; secure
+          </li>
+          <li class="hero-trust-item">
+            <svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>
+            Designed for women
+          </li>
+        </ul>
+
+        <div class="hero-meta hero-reveal d-5">
           <div><span class="label">Stage</span><span class="value">Pre-launch MVP</span></div>
           <div><span class="label">Timeline</span><span class="value">3–4 months</span></div>
           <div><span class="label">Initial capital</span><span class="value">€32,000 – €40,000</span></div>
           <div><span class="label">Monthly operating</span><span class="value">€200 – €450</span></div>
         </div>
-        <p class="hero-script">Begin where you are.</p>
+        <p class="hero-script hero-reveal d-6">Begin where you are.</p>
       </div>
     </section>
 
@@ -127,7 +234,9 @@
       </div>
     </section>
 
-    <!-- SECTION 4 -->
+    <!-- SECTION 4 ================================================
+         Existing pillars, now iconified and with scale(1.02) hover.
+    ============================================================ -->
     <section class="section" id="different">
       <div class="wrap">
         <div class="narrow">
@@ -135,7 +244,8 @@
           <h2>What makes this different</h2>
         </div>
         <div class="pillars">
-          <article class="pillar">
+          <article class="pillar reveal">
+            <svg class="pillar-icon" aria-hidden="true"><use href="#i-feather"/></svg>
             <h3>Clinically authored</h3>
             <p>
               Intake questions, editorial voice, content library and the
@@ -143,7 +253,8 @@
               marketing logic.
             </p>
           </article>
-          <article class="pillar">
+          <article class="pillar reveal">
+            <svg class="pillar-icon" aria-hidden="true"><use href="#i-heart"/></svg>
             <h3>Women-centered by design</h3>
             <p>
               Not a demographic label. Reflected in the therapists we curate,
@@ -151,7 +262,8 @@
               pacing of the product.
             </p>
           </article>
-          <article class="pillar">
+          <article class="pillar reveal">
+            <svg class="pillar-icon" aria-hidden="true"><use href="#i-aperture"/></svg>
             <h3>Deliberately small</h3>
             <p>
               The MVP focuses on doing one thing exceptionally well: helping a
@@ -163,8 +275,76 @@
       </div>
     </section>
 
+    <!-- HOW IT WORKS — NEW SECTION ================================
+         4-step visual journey with icons and a soft connector line.
+         Unnumbered (uses eyebrow label) to sit between narrative
+         sections without disturbing the 01–10 numbering.
+    ============================================================ -->
+    <section class="section tinted" id="journey" aria-label="How it works">
+      <div class="wrap">
+        <div class="narrow">
+          <p class="section-eyebrow">How it will feel to use</p>
+          <h2>A calm, four-step journey</h2>
+          <p>
+            A guided path — not a funnel — from the moment a woman arrives
+            to the moment she feels heard.
+          </p>
+        </div>
+
+        <div class="journey">
+          <article class="step reveal">
+            <div class="step-badge">
+              <svg class="icon" aria-hidden="true"><use href="#i-compass"/></svg>
+            </div>
+            <p class="step-number">Step 01</p>
+            <h3>Find support</h3>
+            <p>
+              A gentle intake helps surface the kind of therapist — and the
+              kind of conversation — that will feel right.
+            </p>
+          </article>
+
+          <article class="step reveal">
+            <div class="step-badge">
+              <svg class="icon" aria-hidden="true"><use href="#i-users"/></svg>
+            </div>
+            <p class="step-number">Step 02</p>
+            <h3>Choose therapist</h3>
+            <p>
+              Clinically authored profiles, written with warmth and clarity.
+              No marketing copy, no pressure to decide.
+            </p>
+          </article>
+
+          <article class="step reveal">
+            <div class="step-badge">
+              <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+            </div>
+            <p class="step-number">Step 03</p>
+            <h3>Book session</h3>
+            <p>
+              Simple scheduling and a secure video room — when she is ready,
+              not before. Reschedule freely.
+            </p>
+          </article>
+
+          <article class="step reveal">
+            <div class="step-badge">
+              <svg class="icon" aria-hidden="true"><use href="#i-sprout"/></svg>
+            </div>
+            <p class="step-number">Step 04</p>
+            <h3>Start feeling better</h3>
+            <p>
+              Therapy alongside a trusted content library and a therapist-led
+              community — small, considered steps forward.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- SECTION 5 — CLINICIANS -->
-    <section class="section tinted" id="clinicians">
+    <section class="section" id="clinicians">
       <div class="wrap">
         <div class="narrow">
           <p class="section-number">05</p>
@@ -219,14 +399,14 @@
     </section>
 
     <!-- SECTION 6 — DIGITAL TEAM -->
-    <section class="section" id="foundation">
+    <section class="section tinted" id="foundation">
       <div class="wrap">
         <div class="narrow">
           <p class="section-number">06</p>
           <h2>The digital foundation — human-centered technology</h2>
           <p>
             The clinical vision is matched by a disciplined, experienced digital
-            team from <span class="smallcaps">xophus</span>.
+            team from <a class="xophus-link" href="https://xophus.com/" target="_blank" rel="noopener noreferrer">xophus</a>.
           </p>
         </div>
 
@@ -270,6 +450,95 @@
             decision-maker, a therapist, or a screening authority. Those roles
             remain human.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT PREVIEW — NEW SECTION =============================
+         Tangible mockups so the investor can see, not just read.
+         A therapist card, a Q&A exchange, and 3 article cards.
+    ============================================================ -->
+    <section class="section" id="product-preview" aria-label="Product preview">
+      <div class="wrap">
+        <div class="narrow">
+          <p class="section-eyebrow">A glimpse of the product</p>
+          <h2>Honest, unhurried surfaces</h2>
+          <p>
+            Three quick previews of how the platform will meet a visitor —
+            clinically authored therapist profiles, a calm Q&amp;A space, and
+            a small, carefully edited content library.
+          </p>
+        </div>
+
+        <div class="preview-grid">
+
+          <!-- Therapist card mock -->
+          <article class="therapist-card reveal" aria-label="Therapist profile example">
+            <div class="therapist-avatar" aria-hidden="true">MP</div>
+            <div class="therapist-info">
+              <h3>Dr Maria Petridou</h3>
+              <ul class="therapist-specs">
+                <li>Trauma</li>
+                <li>Relationships</li>
+                <li>Women's mental health</li>
+              </ul>
+              <p class="therapist-message">
+                "Therapy is a relationship first, and a method second.
+                Whatever brings you here, we can take it slowly."
+              </p>
+              <p class="trust-line">
+                <svg class="icon" aria-hidden="true"><use href="#i-shield-check"/></svg>
+                Every therapist is verified and carefully selected.
+              </p>
+            </div>
+          </article>
+
+          <!-- Q&A preview -->
+          <section class="qa-preview reveal" aria-label="Community Q&A example">
+            <p class="qa-preview-label">
+              <svg class="icon" aria-hidden="true"><use href="#i-message-circle"/></svg>
+              A question, calmly answered
+            </p>
+
+            <div class="qa-turn qa-turn-user">
+              <p class="qa-turn-meta">You</p>
+              <div class="qa-bubble qa-bubble-user">
+                How do I know if I actually need therapy?
+              </div>
+            </div>
+
+            <div class="qa-turn qa-turn-therapist">
+              <p class="qa-turn-meta">Lisa · Therapist</p>
+              <div class="qa-bubble qa-bubble-therapist">
+                You don't need to wait for things to feel "bad enough."
+                Therapy is useful wherever you are — for clarity, support,
+                or simply space to think out loud.
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- Article cards -->
+        <div class="articles" aria-label="Content library examples">
+          <article class="article-card reveal">
+            <svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg>
+            <p class="article-category">Burnout</p>
+            <h3 class="article-title">Understanding quiet exhaustion</h3>
+            <p class="article-meta">6 min read · Written with Dr Johanna</p>
+          </article>
+          <article class="article-card reveal">
+            <svg class="icon" aria-hidden="true"><use href="#i-book-open"/></svg>
+            <p class="article-category">Anxiety</p>
+            <h3 class="article-title">When worry becomes constant</h3>
+            <p class="article-meta">4 min read · Written with Lisa</p>
+          </article>
+          <article class="article-card reveal">
+            <svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>
+            <p class="article-category">Relationships</p>
+            <h3 class="article-title">Boundaries without guilt</h3>
+            <p class="article-meta">5 min read · Editorial team</p>
+          </article>
         </div>
       </div>
     </section>
@@ -360,7 +629,10 @@
       </div>
     </section>
 
-    <!-- SECTION 10 — CLOSING -->
+    <!-- SECTION 10 — CLOSING + CTA ================================
+         Calm closing paragraph kept as-is, with an added soft CTA
+         card below: warm headline + button + reassurance line.
+    ============================================================ -->
     <section class="section closing" id="first-step">
       <div class="wrap narrow">
         <p class="section-number">10</p>
@@ -381,6 +653,7 @@
           safe. This is the work we are prepared to do.
         </p>
         <p class="signature">— Lisa, Johanna, Eleni &amp; Nikos</p>
+
       </div>
     </section>
 
@@ -400,20 +673,22 @@
       <p>A Safe Digital Space for Women · Working Title</p>
       <p>
         Prepared by Johanna &amp; Lisa in collaboration with
-        <span class="smallcaps">xophus</span> · Confidential
+        <a class="xophus-link" href="https://xophus.com/" target="_blank" rel="noopener noreferrer">xophus</a> · Confidential
       </p>
     </div>
   </footer>
 
   <script>
+    /* ----------------------------------------------------------------
+       Section navigation: button clicks + ArrowUp / ArrowDown keys.
+       Smooth scroll with sticky-header offset compensation.
+    ---------------------------------------------------------------- */
     (function () {
       const sections = Array.from(document.querySelectorAll("main > section"));
       const upButton = document.getElementById("section-nav-up");
       const downButton = document.getElementById("section-nav-down");
 
-      if (!sections.length || !upButton || !downButton) {
-        return;
-      }
+      if (!sections.length || !upButton || !downButton) return;
 
       const keySetDown = new Set(["ArrowDown", "PageDown"]);
       const keySetUp = new Set(["ArrowUp", "PageUp"]);
@@ -436,7 +711,6 @@
             closestIndex = index;
           }
         });
-
         return closestIndex;
       }
 
@@ -447,20 +721,15 @@
       }
 
       function scrollToSection(index) {
-        const clampedIndex = Math.max(0, Math.min(index, sections.length - 1));
-        const target = sections[clampedIndex];
+        const clamped = Math.max(0, Math.min(index, sections.length - 1));
+        const target = sections[clamped];
         const top = target.offsetTop - getHeaderOffset();
-
-        window.scrollTo({
-          top: Math.max(0, top),
-          behavior: "smooth"
-        });
+        window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
       }
 
       function isTypingContext() {
         const active = document.activeElement;
         if (!active) return false;
-
         const tag = active.tagName;
         return (
           active.isContentEditable ||
@@ -483,10 +752,8 @@
       document.addEventListener("keydown", (event) => {
         if (isTypingContext()) return;
         if (!keySetDown.has(event.key) && !keySetUp.has(event.key)) return;
-
         event.preventDefault();
         updateButtonState();
-
         if (keySetDown.has(event.key)) {
           scrollToSection(currentIndex + 1);
         } else {
@@ -498,6 +765,35 @@
       window.addEventListener("resize", updateButtonState);
       window.addEventListener("load", updateButtonState);
       updateButtonState();
+    })();
+
+    /* ----------------------------------------------------------------
+       Scroll reveal: adds `.is-visible` to any `.reveal` element
+       as it enters the viewport. Fades + lifts in over ~300ms.
+       Automatically disabled for users who prefer reduced motion.
+    ---------------------------------------------------------------- */
+    (function () {
+      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const targets = document.querySelectorAll(".reveal");
+
+      if (reduce || !("IntersectionObserver" in window)) {
+        targets.forEach((el) => el.classList.add("is-visible"));
+        return;
+      }
+
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              io.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      );
+
+      targets.forEach((el) => io.observe(el));
     })();
   </script>
 
