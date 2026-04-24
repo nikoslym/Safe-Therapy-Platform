@@ -406,6 +406,10 @@ h3 {
   filter: none;
 }
 
+.team-clinical .person:nth-child(2) img {
+  object-position: 8% center;
+}
+
 .person:hover img {
   filter: grayscale(0);
 }
