@@ -235,10 +235,10 @@ em { font-style: italic; }
   background-position: right center;
 }
 
-#investment {
+#delivery-model {
   background-image:
     linear-gradient(rgba(239, 231, 218, 0.90), rgba(239, 231, 218, 0.90)),
-    url('assets/visual-investment.jpg');
+    url('assets/visual-delivery.jpg');
   background-size: cover;
   background-position: center 40%;
 }
@@ -308,9 +308,9 @@ em { font-style: italic; }
   margin: 0;
 }
 
-/* Investment summary block ------------------------------------ */
+/* Delivery summary block -------------------------------------- */
 
-.investment-summary {
+.delivery-summary {
   background: var(--cream);
   border: 1px solid var(--line);
   border-left: 3px solid var(--accent);
@@ -319,7 +319,7 @@ em { font-style: italic; }
   border-radius: 2px;
 }
 
-.investment-label {
+.delivery-label {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.18em;
@@ -328,7 +328,7 @@ em { font-style: italic; }
   font-weight: 500;
 }
 
-.investment-figure {
+.delivery-figure {
   font-family: var(--serif);
   font-size: 28px;
   font-weight: 400;
@@ -990,9 +990,9 @@ h3 {
   color: var(--ink-soft);
 }
 
-/* Investment allocation --------------------------------------- */
+/* Delivery focus grid ----------------------------------------- */
 
-.allocation {
+.delivery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 32px;
@@ -1002,28 +1002,19 @@ h3 {
   border-bottom: 1px solid var(--line);
 }
 
-.alloc-item { text-align: center; }
+.delivery-item { text-align: center; }
 
-.alloc-num {
+.delivery-phase {
   font-family: var(--serif);
   font-weight: 300;
-  font-size: 72px;
+  font-size: 48px;
   line-height: 1;
   color: var(--ink);
   margin: 0 0 8px;
   letter-spacing: -0.02em;
 }
 
-.alloc-num span {
-  font-size: 28px;
-  color: var(--accent);
-  margin-left: 4px;
-  vertical-align: top;
-  position: relative;
-  top: 16px;
-}
-
-.alloc-label {
+.delivery-description {
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.16em;
@@ -1178,13 +1169,13 @@ h3 {
     height: 170px;
   }
 
-  .allocation {
+  .delivery-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 28px;
     padding: 36px 0;
   }
 
-  .alloc-num { font-size: 56px; }
+  .delivery-phase { font-size: 42px; }
 
   .closing-pull { font-size: 21px; }
 
@@ -1197,7 +1188,7 @@ h3 {
 }
 
 @media (max-width: 520px) {
-  .allocation {
+  .delivery-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1225,8 +1216,8 @@ h3 {
 @media print {
   .page-header, .page-footer { position: static; }
   .section, .section.tinted { background: #fff !important; padding: 32px 0; }
-  .pillar, .allocation, .article-card, .therapist-card, .qa-preview,
-  .snapshot-item, .investment-summary, .structured-list {
+  .pillar, .delivery-grid, .article-card, .therapist-card, .qa-preview,
+  .snapshot-item, .delivery-summary, .structured-list {
     break-inside: avoid;
   }
   .visual-note { display: none; }
